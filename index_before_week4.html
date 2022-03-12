@@ -36,7 +36,7 @@
                     <!---ToolTip for button commented out for future reference
                     <a href="#reserveForm" class="btn btn-info btn-lg text-nowrap mt-4 pull-right" data-toggle="tooltip" data-html="true" data-placement="bottom" title="Or call us at <br/> <strong>1-206-555-1234</strong>">Reserve Campsite</a>
                     -->
-                    <a class="btn btn-info btn-lg text-nowrap mt-4 pull-right" id="reserveButton">Reserve Campsite</a>
+                    <a class="btn btn-info btn-lg text-nowrap mt-4 pull-right" data-toggle="modal" data-target="#reserveModal">Reserve Campsite</a>
                 </div>
             </div>
         </div>
@@ -46,7 +46,7 @@
     <div id="reserveModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header bg-info text-white">
                     <h3 class="modal-title">Reserve a Campsite</h3>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
@@ -113,7 +113,7 @@
                 </ul>
                 <!--Modal-->
                 <span class="navbar-text ml-auto">
-                    <a role="button" id="loginButton">
+                    <a role="button" data-toggle="modal" data-target="#loginModal">
                         <i class="fa fa-sign-in"></i>Login
                     </a>
                 </span> 
